@@ -26,7 +26,6 @@ export const registerUser = createAsyncThunk(
 
 export const fetchUser = createAsyncThunk(
     `user/login`,
-    //TODO Homework endpoint /account/login
     async ({login, password}: UserLogin) => {
         const token = createToken(login, password);
         const response = await fetch(`${base_url}/account/login`, {
