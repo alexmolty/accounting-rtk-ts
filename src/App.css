@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Simple page layout helpers */
+.page { display: grid; gap: 1rem; }
+.stack { display: flex; flex-direction: column; gap: 0.75rem; }
+.row { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.card { background: #ffffff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1rem; box-shadow: 0 2px 10px rgba(0,0,0,0.04); }
+.center { display: grid; place-items: center; }
+label > input { margin-top: 0.25rem; }
